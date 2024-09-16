@@ -1,0 +1,102 @@
+import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Recycle, Trash2, Battery, AlertTriangle } from "lucide-react"
+
+export default function Component() {
+  return (
+    <div className="min-h-screen bg-green-50">
+      {/* Hero Section */}
+      <section className="relative h-[60vh] bg-green-800 text-white">
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4">Manage E-Waste, Save Our Planet</h1>
+          <p className="text-xl md:text-2xl mb-8">Join the movement for responsible electronic disposal</p>
+          <Button className="bg-green-500 hover:bg-green-600 text-white">Learn More</Button>
+        </div>
+      </section>
+
+      {/* Information Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center text-green-800">Understanding E-Waste Management</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Recycle className="mr-2" /> What is E-Waste?
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>E-waste refers to discarded electrical or electronic devices. Proper management is crucial to prevent environmental pollution and health hazards.</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center">
+                  <Trash2 className="mr-2" /> Why It Matters
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p>Improper disposal of e-waste leads to toxic substances leaching into soil and water, causing severe environmental damage and health risks.</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Statistics Section */}
+      <section className="bg-green-100 py-16 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-center text-green-800">The Impact of E-Waste</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-green-600">50M</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center">Tons of e-waste generated globally each year</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-green-600">20%</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center">Of e-waste is recycled properly</p>
+              </CardContent>
+            </Card>
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-4xl font-bold text-green-600">80%</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-center">Ends up in landfills or is informally recycled</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section className="py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-4 text-green-800">Take Action Now</h2>
+          <p className="mb-8 text-lg">Join our initiative to promote responsible e-waste management and protect our environment.</p>
+          <div className="flex justify-center space-x-4">
+            <Button className="bg-green-500 hover:bg-green-600 text-white">Find Recycling Centers</Button>
+            <Button variant="outline" className="border-green-500 text-green-500 hover:bg-green-500 hover:text-white">
+              Spread Awareness
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-green-800 text-white py-8 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <p>&copy; 2023 E-Waste Management Initiative. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  )
+}
